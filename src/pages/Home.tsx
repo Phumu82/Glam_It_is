@@ -171,7 +171,7 @@ export default function Home() {
             {instagramImages.map((image, index) => (
               <a
                 key={index}
-                href="https://www.instagram.com/glamitis"
+                href="https://www.instagram.com/glamitis_rsa?igsh=MWd0y2tyNWYwdmFIbQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 group relative"
