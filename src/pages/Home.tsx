@@ -189,7 +189,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a
-              href="https://www.instagram.com/glamitis"
+              href="https://www.instagram.com/glamitis_rsa?igsh=MWd0y2tyNWYwdmFIbQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-pink-500 hover:border-2 hover:border-pink-500 transition-all duration-300"
