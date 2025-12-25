@@ -7,7 +7,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" style={styles.logoWrap}>
           <img
-            src="/glam-it-is-logo.jpg"
+            src="/glam-it-is-logo.jpeg"
             alt="Glam It Is Logo"
             style={styles.logo}
           />
