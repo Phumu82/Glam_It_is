@@ -73,7 +73,7 @@ export default function Gallery() {
               Book Your Session
             </a>
             <a
-              href="https://www.instagram.com/glamitis"
+              href="https://www.instagram.com/glamitis_rsa?igsh=MWd0y2tyNWYwdmFIbQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-pink-500 border-2 border-pink-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-500 hover:text-white transition-all duration-300 shadow-lg"
