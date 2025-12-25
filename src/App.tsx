@@ -1,5 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
+import { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -8,19 +10,34 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'home':
+        return <Home onNavigate={setCurrentPage} />;
+      case 'about':
+        return <About />;
+      case 'services':
+        return <Services />;
+      case 'masterclass':
+        return <Masterclass />;
+      case 'gallery':
+        return <Gallery />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Home onNavigate={setCurrentPage} />;
+    }
+  };
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
-          <Route path="masterclass" element={<Masterclass />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </Router>
+    <div className="min-h-screen bg-white">
+      <Header currentPage={currentPage} onNavigate={setCurrentPage} />
+      <main>{renderPage()}</main>
+      <Footer />
+      <FloatingWhatsApp />
+    </div>
   );
 }
 
