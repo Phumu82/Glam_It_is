@@ -24,7 +24,7 @@ export default function Navigation() {
           <Link to="/" className="flex items-center space-x-2">
             <Sparkles className="w-8 h-8 text-pink-400" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-pink-500">Glam It Is</span>
+              <span className="text-2xl font-bold text-pink-500"></span>
               <span className="text-xs text-gray-500">Beauty & Academy</span>
             </div>
           </Link>
